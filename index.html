@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="celsius">
+
+    <div id="container">
+
+        <header>
+            <h1>Temperature<br>Conversion</h1>
+        </header>
+
+        <main>
+            <div id="output" class="border" aria-live="polite">
+                <h2>Temperature Output</h2>
+                <div>
+                    <span id="Foutput"></span>° F
+                </div>
+                <div>
+                    <span id="Coutput"></span>° C
+                </div>
+                <div>
+                    <span id="Koutput"></span>&nbsp;&nbsp;K
+                </div>
+            </div>
+            <div id="input">
+                <label class="border flex">
+                    <h2>Temperature Value</h2>
+                    <input id="tempValue" type="number" step="0.01" value="0">
+                </label>
+                <div class="border flex">
+                    <h2>Temperature Scale</h2>
+                    <div>
+                        <label><input type="radio" name="scale" class="fahrenheit-input" value="F"> Fahrenheit</label>
+                        <label><input type="radio" name="scale" class="celsius-input" value="C" checked> Celsius</label>
+                        <label><input type="radio" name="scale" class="kelvin-input" value="K"> Kelvin</label>
+                    </div>
+                </div>
+        </main>
+    
+    </div>
+
+<script src="conversions.js"></script>    
+</body>
+</html>

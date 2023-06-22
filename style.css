@@ -1,0 +1,133 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: all .5s ease-out;
+}
+
+@font-face {
+    font-family: "QuicksandRegular";
+    src: url("./fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+    font-family: "DMMonoRegular";
+    src: url("./fonts/DMMono-Regular.ttf");
+}
+
+#container {
+    margin: 0 auto;
+    width: 500px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: QuicksandRegular, sans-serif;
+    height: 100%;
+}
+
+label {
+    display: block;
+}
+
+#output {
+    text-align: right;
+    font-family: DMMonoRegular, monospace;
+    font-size: 1.75em;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-family: QuicksandRegular, sans-serif;
+    text-align: center;
+}
+
+.border {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.4);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.kelvin {
+    background-color: #f94206;
+}
+
+.celsius {
+    background: #5A62FC;
+}
+
+.fahrenheit {
+    background: #9b54cb;
+}
+
+input[type="number"] {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    background: rgba(255,255,255,.6); 
+    font-size: 1.2em;   
+    font-family: DMMonoRegular, monospace;
+}
+
+.kelvin input[type="number"]:focus-visible {
+    outline: 2px solid #A52C03;
+}
+
+.celsius input[type="number"]:focus-visible {
+    outline: 2px solid #212CCA;
+}
+
+.fahrenheit input[type="number"]:focus-visible {
+    outline: 2px solid #634A96;
+}
+
+input[type="radio"] {
+    appearance: none;  
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;  
+    border: 10px solid rgba(255,255,255,.8);
+    transition: 0.2s all linear;
+    margin-right: 5px;  
+    position: relative;
+    top: 4px;
+}
+  
+.kelvin input[type="radio"]:checked {
+    border: 10px solid #A52C03;
+}
+
+.celsius input[type="radio"]:checked {
+    border: 10px solid #212CCA;
+}
+
+.fahrenheit input[type="radio"]:checked {
+    border: 10px solid #634A96;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+#output > div {
+    transition: opacity .25s ease-out;
+}
